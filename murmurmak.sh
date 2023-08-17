@@ -723,9 +723,10 @@ while true; do
           cp -rn $HOME/Library/Application\ Support/Code /goinfre/$USER/code-portable-data/user-data &
           cp -rn $HOME/.vscode/extensions /goinfre/$USER/code-portable-data/ &
           cp -rn $HOME/Library/Application\ Support/Google /goinfre/$USER/data &
-
+    
           git -C /goinfre/$USER/data init & wait;
           git -C /goinfre/$USER/data remote add origin $repo
+          git -C /goinfre/$USER/data push --set-upstream origin master
           # echo "pushing to git"
           # git_push "init"
           # skicka_push
