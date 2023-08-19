@@ -149,7 +149,7 @@ git clone https://github.com/murmurlab/scripts.git ~/.murmurmak ; sh ~/.murmurma
     usb debug acik olmasi gerekiyor
     bridge yi vpn olarak baglaniliyor vpn konfigurasyonlarini apk direk yapiyor (sadece vpn icin degil server da ki adb ile android de ki adb nin haberlesmesi icin gerekli adb forward, reverse komutlarini calistirmasi icin)
 
-    detayli kullanim yazmak istemiyorum cunku program assagidaki repoda anlatilmis
+    Detaylı kullanım yazmak istemiyorum çünkü program assagidaki repoda anlatilmis
 
     ilk kurulumda scriptteki en son satirda programi calistiriyor tekrar calistirmak istediginizde en son satiri calistirmaniz yeterli
 
