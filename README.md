@@ -29,36 +29,37 @@ git clone https://github.com/murmurlab/scripts.git ~/.murmurmak ; sh ~/.murmurma
 
     **select for first-setup 2) then,**
 
-    > msvscode yedekleri, skicka uzerinden google drive a yapilmaktadir. skicka calismazsa msvscode yedeklemesi yapamazsiniz.
-    skicka calisabilmesi icin First Backup 2) secip islem bittikten sonra ~/.skicka.config icerisine console.cloud.google.com dan proje olusturup APIs & Services kismindan credentials kismindan DesktopApp tipinde OAuthClientId credentials olusturup clientid ve clientsecret vermeniz gerekiyor ardindan APIs & Services kismindan Enabled APIs & services kismindan Google Drive API acmaniz gerekir sonra OAuth consent screen kismindan ya uygulamayi publish etmeli yada kendinizi eklemelisiniz.
+msvscode yedekleri, skicka uzerinden google drive a yapilmaktadir. skicka calismazsa msvscode yedeklemesi yapamazsiniz.
 
-    Store your VS Code and browsers' data on '/goinfre' for a smoother and faster experience."
+skicka calisabilmesi icin First Backup 2) secip islem bittikten sonra ~/.skicka.config icerisine console.cloud.google.com dan proje olusturup APIs & Services kismindan credentials kismindan DesktopApp tipinde OAuthClientId credentials olusturup clientid ve clientsecret vermeniz gerekiyor ardindan APIs & Services kismindan Enabled APIs & services kismindan Google Drive API acmaniz gerekir sonra OAuth consent screen kismindan ya uygulamayi publish etmeli yada kendinizi eklemelisiniz.
 
-  - Seçenek 1: Yedekleri indirme
+Store your VS Code and browsers' data on '/goinfre' for a smoother and faster experience."
 
-    Kullanıcıdan bir Git deposu adresi alınır ve gerekli kontroller yapılır.
-    Eğer brew yoksa, Homebrew, go ve go skicka tool yüklenir .
-    Yedekler indirilir.
-    Microsoft Edge, Google Chrome ve msvscode için gereken dosyalar indirilir ve çıkartılır.
-    Tarayıcılar için yoksa alias'lar oluşturulur.
-    >msvscode | google-chrome terminale kode | chrome yazarak acilir
+Seçenek 1: Yedekleri indirme
 
-  - Seçenek 2: İlk yedekleme
+Kullanıcıdan bir Git deposu adresi alınır ve gerekli kontroller yapılır.
+Eğer brew yoksa, Homebrew, go ve go skicka tool yüklenir .
+Yedekler indirilir.
+Microsoft Edge, Google Chrome ve msvscode için gereken dosyalar indirilir ve çıkartılır.
+Tarayıcılar için yoksa alias'lar oluşturulur.
 
-    Kullanıcının msvscode ve tarayici verileri yedeklenir git reposuna ve buluta.
+msvscode | google-chrome terminale kode | chrome yazarak acilir
 
-  - Seçenek 3: Tarayıcı Verilerini Git'e Yükleme
+Seçenek 2: İlk yedekleme
 
-    Tüm tarayıcı verileri Git reposuna eklenir ve yedeklenir.
+Kullanıcının msvscode ve tarayici verileri yedeklenir git reposuna ve buluta.
 
-  - Seçenek 4: VS Code Verilerini Buluta Yükleme
+Seçenek 3: Tarayıcı Verilerini Git'e Yükleme
 
-    VS Code verileri yedeklenir, skicka kullanılarak buluta yüklenir.
+Tüm tarayıcı verileri Git reposuna eklenir ve yedeklenir.
 
-- ## big file finder 1)
+Seçenek 4: VS Code Verilerini Buluta Yükleme
 
-    > Lists directories in the given directory with a size greater than the given size up to the given depth
-    .
+VS Code verileri yedeklenir, skicka kullanılarak buluta yüklenir.
+
+big file finder 1)
+Belirtilen dizin içindeki, belirtilen boyuttan daha büyük dosyalar, belirtilen derinliğe kadar dizinleri listeler.
+    \
     ![alt text](bigsmoke.jpeg "© born2beroot")
 
 - ## mac storage cleaner 2)
@@ -146,29 +147,33 @@ git clone https://github.com/murmurlab/scripts.git ~/.murmurmak ; sh ~/.murmurma
 
 - ## gnirehted installer 9)
 
-    usb debug acik olmasi gerekiyor
-    bridge yi vpn olarak baglaniliyor vpn konfigurasyonlarini apk direk yapiyor (sadece vpn icin degil server da ki adb ile android de ki adb nin haberlesmesi icin gerekli adb forward, reverse komutlarini calistirmasi icin)
+  USB hata ayıklama açık olmalıdır.
 
-    detayli kullanim yazmak istemiyorum cunku program assagidaki repoda anlatilmis
+Bridge, VPN olarak bağlanır ve VPN yapılandırmalarını doğrudan APK'ya uygular (sadece VPN için değil, aynı zamanda sunucudaki adb ile Android'deki adb'nin iletişim kurması için gerekli olan adb ileri ve geri komutlarını çalıştırmak için).
 
-    ilk kurulumda scriptteki en son satirda programi calistiriyor tekrar calistirmak istediginizde en son satiri calistirmaniz yeterli
+Ayrıntılı kullanım yazmak istemiyorum, çünkü program aşağıdaki depoda açıklanmıştır.
 
-    kablosuz olarakta usb debug yapilabiliyor bu yuzden kablosuz olarakta ayni seyler gecerli
+İlk kurulumda, scriptteki son satırda program başlatılır. Programı tekrar başlatmak istediğinizde, son satırı çalıştırmak yeterlidir.
 
-    tek adb server a birden fazla cihaz eklenebiliyor manuel belirtmek isterseniz gnirehtet [ip:port | serialid]
+Kablosuz olarak USB hata ayıklama yapılabilir, bu nedenle kablosuz olarak da aynı şeyler geçerlidir.
 
-    bu sadece setup scriptidir
-    gnirehtetin java versiyonu icin brewsiz java kurup calistirir
+Tek bir adb sunucusuna birden fazla cihaz eklenebilir. Manuel olarak belirtmek isterseniz, gnirehtet [ip:port | serialid] komutunu kullanın.
 
-    gnirehtetin rust versiyonu 650mb civari oldugu icin indirmesi haric 30dk suruyor brew reposunda mevcuttur
-    brewli javada derlemesi uzun suruyodu oyuzden derlenmis source java 8u331 indirip hizli sekilde kuruluyor
+Bu sadece bir kurulum betiğidir.
 
-    scriptin indirdigi dosyalar adbtools java ve kaynagi assagidaki link olan programimiz
+Brew olmadan Java'yı kurar ve gnirehtetin Java sürümünü çalıştırır.
 
-    https://github.com/Genymobile/gnirehtet
+gnirehtetin Rust sürümü yaklaşık 650 MB'dır ve indirmesi hariç yaklaşık 30 dakika sürer. Brew deposunda mevcuttur.
+
+Brew'li Java'da derleme uzun sürüyordu, bu nedenle derlenmiş kaynak Java 8u331'i indirip hızlı bir şekilde kuruyoruz.
+
+Script tarafından indirilen dosyalar, adbtools Java ve gnirehtet programımızın kaynağıdır.
+
+ Scriptin indirdiği dosyalar adbtools java ve kaynagi aşağıdaki link olan programımız
+
+   https://github.com/Genymobile/gnirehtet
     \
     \
-    ss
 
 ![alt text](SS.png "© born2beroot")
 \
